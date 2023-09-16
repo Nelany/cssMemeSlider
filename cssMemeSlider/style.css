@@ -23,7 +23,7 @@
   border-radius: 15px;
 }
 
-.slides-conteiner{
+.slides-container{
   width: 70%;
   margin: 40px 0 0 0;
   overflow: hidden;
@@ -41,6 +41,7 @@
   display: flex;
   justify-content: center;
   background-color: rgb(174, 143, 85);
+  transition: all 0.6s ease;
 }
 
 .footer{
@@ -51,7 +52,7 @@
   margin: 40px 0 0 0;
 }
 
-.slide-name-conteiner{
+.slide-name-container{
   width: 70%;
   overflow: hidden;
   margin: 0 0 0 8px;
@@ -64,15 +65,24 @@
 
 .slide-name{
   width: 25%;
+  transition: all 0.6s ease;
 }
 
-.buttons-conteiner{
+.true-button{
+  visibility: hidden;
+  width: 10px;
+  height: 10px;
+  margin: -2px 0 0 0;
+  appearance: none;
+}
+
+.buttons-container{
   display: flex;
   justify-content: space-between;
   width: 110px;
 }
 
-.button-lable{
+.button-label{
   width: 26px;
   height: 26px;
   display: flex;
@@ -82,11 +92,9 @@
 }
 
 .button{
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   display: block;
-  margin: 0;
-  appearance: none;
   border-radius: 50%;
   background-color: rgb(227, 198, 144);
   border: 3px solid rgb(227, 198, 144);
@@ -94,7 +102,60 @@
   cursor: pointer;
 }
 
-.button:checked {
-  background-color: rgb(146, 111, 45);
-  cursor: auto;
+.button:hover {
+  transform:scale(1.2);
+}
+
+#button1:checked~.footer>.buttons-container>.button-label1>.button {
+  background-color:rgb(146, 111, 45);
+}
+
+#button2:checked~.footer>.buttons-container>.button-label2>.button {
+  background-color:rgb(146, 111, 45);
+}
+
+#button3:checked~.footer>.buttons-container>.button-label3>.button {
+  background-color:rgb(146, 111, 45);
+}
+
+#button4:checked~.footer>.buttons-container>.button-label4>.button {
+  background-color:rgb(146, 111, 45);
+}
+
+.slide1 {
+  margin-left: 0;
+}
+
+#button1:checked~.slides-container>.slides>.slide1 {
+  margin-left: 0;
+}
+
+#button2:checked~.slides-container>.slides>.slide1 {
+  margin-left: -25%;
+}
+
+#button3:checked~.slides-container>.slides>.slide1 {
+  margin-left: -50%;
+}
+
+#button4:checked~.slides-container>.slides>.slide1 {
+  margin-left: -75%;
+}
+
+
+
+#button1:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
+  margin-left: 0;
+}
+
+#button2:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
+  margin-left: -25%;
+}
+
+#button3:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
+  margin-left: -50%;
+}
+
+#button4:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
+  margin-left: -75%;
 }
