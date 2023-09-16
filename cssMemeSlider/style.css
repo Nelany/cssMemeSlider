@@ -159,3 +159,20 @@
 #button4:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
   margin-left: -75%;
 }
+
+@media (max-width: 1024px) {
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-name-container{
+    order: 2;
+    width: 100%;
+  }
+
+  .buttons-container{
+    order: 1;
+    margin-bottom: 10px;
+  }
+}
