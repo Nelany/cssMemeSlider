@@ -1,0 +1,100 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: rgb(23, 13, 0);
+  color: rgb(230, 219, 198);
+  font-size: large;
+}
+
+.content{
+  max-width: 1440px;
+  width: 90%;
+  height: 70vh;
+  margin: 10vh 0 20vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(146, 111, 45);
+  border-radius: 15px;
+}
+
+.slides-conteiner{
+  width: 70%;
+  margin: 40px 0 0 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slides{
+  width: 400%;
+  display: flex;
+}
+
+.slide{
+  width: 25%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(174, 143, 85);
+}
+
+.footer{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 40px 0 0 0;
+}
+
+.slide-name-conteiner{
+  width: 70%;
+  overflow: hidden;
+  margin: 0 0 0 8px;
+}
+
+.slide-names{
+  width: 400%;
+  display: flex;
+}
+
+.slide-name{
+  width: 25%;
+}
+
+.buttons-conteiner{
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.button-lable{
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button{
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin: 0;
+  appearance: none;
+  border-radius: 50%;
+  background-color: rgb(227, 198, 144);
+  border: 3px solid rgb(227, 198, 144);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.button:checked {
+  background-color: rgb(146, 111, 45);
+  cursor: auto;
+}
