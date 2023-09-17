@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-  background-color: rgb(23, 13, 0);
+  background-color: rgb(19, 14, 7);
   color: rgb(230, 219, 198);
   font-size: large;
 }
@@ -13,13 +13,13 @@
 .content{
   max-width: 1440px;
   width: 90%;
-  height: 70vh;
+  height: 75vh;
   margin: 10vh 0 20vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  background-color: rgb(146, 111, 45);
+  background-color: rgb(27, 19, 10);
   border-radius: 15px;
 }
 
@@ -40,7 +40,7 @@
   height: 400px;
   display: flex;
   justify-content: center;
-  background-color: rgb(174, 143, 85);
+  background-color: rgb(87, 69, 45);
   transition: all 0.6s ease;
 }
 
@@ -96,8 +96,8 @@
   height: 10px;
   display: block;
   border-radius: 50%;
-  background-color: rgb(227, 198, 144);
-  border: 3px solid rgb(227, 198, 144);
+  background-color: rgb(162, 141, 102);
+  border: 3px solid rgb(162, 141, 102);
   transition: all 0.4s ease;
   cursor: pointer;
 }
@@ -107,19 +107,19 @@
 }
 
 #button1:checked~.footer>.buttons-container>.button-label1>.button {
-  background-color:rgb(146, 111, 45);
+  background-color:rgb(27, 19, 10);
 }
 
 #button2:checked~.footer>.buttons-container>.button-label2>.button {
-  background-color:rgb(146, 111, 45);
+  background-color:rgb(27, 19, 10);
 }
 
 #button3:checked~.footer>.buttons-container>.button-label3>.button {
-  background-color:rgb(146, 111, 45);
+  background-color:rgb(27, 19, 10);
 }
 
 #button4:checked~.footer>.buttons-container>.button-label4>.button {
-  background-color:rgb(146, 111, 45);
+  background-color:rgb(27, 19, 10);
 }
 
 .slide1 {
