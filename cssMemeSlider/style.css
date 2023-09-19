@@ -65,6 +65,8 @@
 
 .slide-name{
   width: 25%;
+  box-sizing: border-box;
+  padding-right: 0.4rem;
   transition: all 0.6s ease;
 }
 
