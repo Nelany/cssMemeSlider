@@ -1,0 +1,185 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: rgb(19, 14, 7);
+  color: rgb(230, 219, 198);
+  font-size: large;
+}
+
+.content{
+  max-width: 90rem;
+  width: 90%;
+  height: 75vh;
+  margin: 10vh 0 20vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(27, 19, 10);
+  border-radius: 1rem;
+}
+
+.slides-container{
+  width: 70%;
+  margin: 2.5rem 0 0 0;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.slides{
+  width: 400%;
+  display: flex;
+}
+
+.slide{
+  width: 25%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(87, 69, 45);
+  transition: all 0.6s ease;
+}
+
+.footer{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 2.5rem 0 0 0;
+}
+
+.slide-name-container{
+  width: 70%;
+  overflow: hidden;
+  margin: 0 0 0 0.5rem;
+}
+
+.slide-names{
+  width: 400%;
+  display: flex;
+}
+
+.slide-name{
+  width: 25%;
+  box-sizing: border-box;
+  padding-right: 0.4rem;
+  transition: all 0.6s ease;
+}
+
+.true-button{
+  visibility: hidden;
+  width: 0.1rem;
+  height: 0.1rem;
+  margin: -0.125rem 0 0 0;
+  appearance: none;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-between;
+  width: 6.9rem;
+}
+
+.button-label{
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button{
+  width: 0.6rem;
+  height: 0.6rem;
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(162, 141, 102);
+  border: 0.2rem solid rgb(162, 141, 102);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform:scale(1.2);
+}
+
+.button:active {
+  background-color: rgb(230, 219, 198);
+  border: 0.2rem solid rgb(230, 219, 198);
+}
+
+#button1:checked~.footer>.buttons-container>.button-label1>.button {
+  background-color:rgb(27, 19, 10);
+}
+
+#button2:checked~.footer>.buttons-container>.button-label2>.button {
+  background-color:rgb(27, 19, 10);
+}
+
+#button3:checked~.footer>.buttons-container>.button-label3>.button {
+  background-color:rgb(27, 19, 10);
+}
+
+#button4:checked~.footer>.buttons-container>.button-label4>.button {
+  background-color:rgb(27, 19, 10);
+}
+
+.slide1 {
+  margin-left: 0;
+}
+
+#button1:checked~.slides-container>.slides>.slide1 {
+  margin-left: 0;
+}
+
+#button2:checked~.slides-container>.slides>.slide1 {
+  margin-left: -25%;
+}
+
+#button3:checked~.slides-container>.slides>.slide1 {
+  margin-left: -50%;
+}
+
+#button4:checked~.slides-container>.slides>.slide1 {
+  margin-left: -75%;
+}
+
+
+
+#button1:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
+  margin-left: 0;
+}
+
+#button2:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
+  margin-left: -25%;
+}
+
+#button3:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
+  margin-left: -50%;
+}
+
+#button4:checked~.footer>.slide-name-container>.slide-names>.slide-name1{
+  margin-left: -75%;
+}
+
+@media (max-width: 1024px) {
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide-name-container{
+    order: 2;
+    width: 100%;
+  }
+
+  .buttons-container{
+    order: 1;
+    margin-bottom: 0.6rem;
+  }
+}
